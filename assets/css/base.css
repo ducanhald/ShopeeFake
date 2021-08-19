@@ -2,8 +2,11 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --primary-color: rgba(75, 155, 0, 0.74);
+    --primary-color: rgb(247, 69, 46);
     --border-color: #dbdbdb;
+    --header-height: 120px;
+    --navbar-height: 46px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {

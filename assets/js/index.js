@@ -8,7 +8,13 @@ const modalRegister = $('.modal--register')
 const authSwitchBtn = $('.auth-form__switch-btn')
 const authBackLogin = $('.auth-form__controls-back--login')
 const authBackRegister = $('.auth-form__controls-back--register')
-
+const itemSelect = $$('.header__search-option-items')
+for (i of itemSelect) {
+    i.onclick = (e) => {
+        console.log(e.target)
+            // i.classList.add('header__search-option-items--active')
+    }
+}
 
 function showModal(e) {
     e.classList.add('active')
