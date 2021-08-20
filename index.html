@@ -98,14 +98,36 @@
                     </div>
 
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                            <div class="header__search-history">
+                                <p class="header__search-history-heading">Lịch sử tìm kiếm</p>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-items">
+                                        <a href="">Chảo chống dính</a>
+                                    </li>
+                                    <li class="header__search-history-items">
+                                        <a href="">Nồi cơm điệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong Shop</span>
                             <i class="header__search-select-icon fas fa-chevron-down "></i>
                             <ul class="header__search-option">
                                 <li class="header__search-option-items ">
                                     <span>Trong Shop</span>
-                                    <i class="fas fa-check active"></i>
+                                    <i class="fas fa-check "></i>
+                                </li>
+                                <li class="header__search-option-items">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-items ">
+                                    <span>Trong Shop</span>
+                                    <i class="fas fa-check "></i>
                                 </li>
                                 <li class="header__search-option-items">
                                     <span>Ngoài Shop</span>
@@ -119,7 +141,58 @@
                         </div>
                     </div>
                     <div class="header__cart">
-                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__wrap-notice">3</span>
+
+                            <div class="header__cart-list ">
+                                <!-- No cart -->
+                                <img src="/assets/imgs/no-cart.png" class="img-no-cart" alt="">
+                                <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
+                                <!-- Has cart -->
+                                <p class="header__cart-heading">Sản phẩm đã thêm</p>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-items">
+                                        <img src="/assets/imgs/sanpham1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-info">
+                                            <div class="header__cart-info-head">
+                                                <p class="header__cart-name">Iphone chính hãng</p>
+                                                <div class="header__cart-price-wrap">
+                                                    <span class="header__cart-price">16.000.000 VND</span>
+                                                    <span class="header__cart-multiply">x</span>
+                                                    <span class="header__cart-quantity">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-info-body">
+                                                <span class="header__cart-description">Phân loại : Điện thoại di động</span>
+                                                <span class="header__cart-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-items">
+                                        <img src="/assets/imgs/sanpham1.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-info">
+                                            <div class="header__cart-info-head">
+                                                <p class="header__cart-name">Iphone chính hãng</p>
+                                                <div class="header__cart-price-wrap">
+                                                    <span class="header__cart-price">16.000.000 VND</span>
+                                                    <span class="header__cart-multiply">x</span>
+                                                    <span class="header__cart-quantity">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-info-body">
+                                                <span class="header__cart-description">Phân loại : Điện thoại di động</span>
+                                                <span class="header__cart-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="btn btn--primary header__cart-view-cart">Xem giỏ hàng</button>
+                            </div>
+
+
+                        </div>
+
                     </div>
                 </div>
             </div>

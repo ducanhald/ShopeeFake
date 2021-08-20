@@ -11,8 +11,7 @@ const authBackRegister = $('.auth-form__controls-back--register')
 const itemSelect = $$('.header__search-option-items')
 for (i of itemSelect) {
     i.onclick = (e) => {
-        console.log(e.target)
-            // i.classList.add('header__search-option-items--active')
+        e.currentTarget.classList.toggle('header__search-option-items--active')
     }
 }
 
