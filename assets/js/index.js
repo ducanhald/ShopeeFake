@@ -9,9 +9,16 @@ const authSwitchBtn = $('.auth-form__switch-btn')
 const authBackLogin = $('.auth-form__controls-back--login')
 const authBackRegister = $('.auth-form__controls-back--register')
 const itemSelect = $$('.header__search-option-items')
+const categoryItems = $$('.category-items')
 for (i of itemSelect) {
     i.onclick = (e) => {
         e.currentTarget.classList.toggle('header__search-option-items--active')
+    }
+}
+
+for (i of categoryItems) {
+    i.onclick = (e) => {
+        e.currentTarget.classList.toggle('category-items--active')
     }
 }
 
