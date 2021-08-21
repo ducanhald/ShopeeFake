@@ -12,6 +12,8 @@
 .header__navbar-list {
     list-style: none;
     padding-left: 0;
+    display: flex;
+    align-items: center;
 }
 
 .header__navbar-item {
@@ -19,6 +21,66 @@
     display: inline-block;
     font-size: 1.6rem;
     color: var(--white-color);
+}
+
+.header__navbar-user {
+    display: flex;
+    position: relative;
+}
+
+.header__navbar-user-img {
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.header__navbar-user-name {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.header__navbar-user-list {
+    width: 160px;
+    background-color: var(--white-color);
+    padding: 0;
+    position: absolute;
+    top: 140%;
+    right: 0;
+    z-index: 1;
+    display: none;
+    border-radius: 3px;
+    box-shadow: 0 0 6px rgb(211, 210, 210);
+}
+
+.header__navbar-user:hover .header__navbar-user-list {
+    display: block;
+}
+
+.header__navbar-user-list::after {
+    content: "";
+    display: block;
+    border-width: 15px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -26px;
+    right: 20px;
+    z-index: -1;
+}
+
+.header__navbar-user-items {
+    height: 40px;
+    color: var(--text-color);
+    list-style: none;
+    width: 100%;
+    padding-left: 8px;
+    line-height: 40px;
+}
+
+.header__navbar-user-items:hover {
+    background-color: #dbd6d6
 }
 
 .header__navbar-item-link {
