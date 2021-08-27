@@ -10,6 +10,11 @@ const authBackLogin = $('.auth-form__controls-back--login')
 const authBackRegister = $('.auth-form__controls-back--register')
 const itemSelect = $$('.header__search-option-items')
 const categoryItems = $$('.category-items')
+const likeItem = $('.home-product-item__like')
+
+
+
+
 for (i of itemSelect) {
     i.onclick = (e) => {
         e.currentTarget.classList.toggle('header__search-option-items--active')
@@ -46,4 +51,10 @@ authBackRegister.onclick = () => {
 authBackLogin.onclick = () => {
     hideModal(modal)
     hideModal(modalLogin)
+}
+
+
+// Like action
+likeItem.onclick = () => {
+    likeItem.classList.toggle('home-product-item__liked')
 }
